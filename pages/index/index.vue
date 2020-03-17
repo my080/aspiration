@@ -1,8 +1,14 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
+		<view class="title">我的收益</view>
+		<view class="price-status">
+			
+		</view>
+		<view class="menu-bar">
+			
+		</view>
+		<view class="order-count">
+			
 		</view>
 	</view>
 </template>

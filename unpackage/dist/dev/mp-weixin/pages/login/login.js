@@ -171,6 +171,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
 var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
@@ -199,9 +202,10 @@ var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js *
 //
 //
 //
-var mInput = function mInput() {return __webpack_require__.e(/*! import() | components/m-input */ "components/m-input").then(__webpack_require__.bind(null, /*! ../../components/m-input.vue */ 24));};var _default = { components: { mInput: mInput }, data: function data() {return { providerList: [], hasProvider: false, account: '', password: '', positionTop: 0 };}, methods: { initProvider: function initProvider() {var _this = this;var filters = ['weixin', 'qq', 'sinaweibo'];uni.getProvider({ service: 'oauth', success: function success(res) {if (res.provider && res.provider.length) {for (var i = 0; i < res.provider.length; i++) {if (~filters.indexOf(res.provider[i])) {_this.providerList.push({ value: res.provider[i], image: '../../static/img/' + res.provider[i] + '.png' });
-              }
-            }
+//
+//
+//
+var mInput = function mInput() {return __webpack_require__.e(/*! import() | components/m-input */ "components/m-input").then(__webpack_require__.bind(null, /*! ../../components/m-input.vue */ 24));};var _default = { components: { mInput: mInput }, data: function data() {return { providerList: [], hasProvider: false, account: '', password: '', positionTop: 0 };}, methods: { initProvider: function initProvider() {var _this = this;var filters = ['weixin', 'qq', 'sinaweibo'];uni.getProvider({ service: 'oauth', success: function success(res) {if (res.provider && res.provider.length) {for (var i = 0; i < res.provider.length; i++) {if (~filters.indexOf(res.provider[i])) {_this.providerList.push({ value: res.provider[i], image: '../../static/img/' + res.provider[i] + '.png' });}}
             _this.hasProvider = true;
           }
         },
