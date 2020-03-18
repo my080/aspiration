@@ -1,0 +1,17 @@
+
+.btn-bg {
+	font-family: 'OPPOSans-M';
+	font-size: 32rpx;
+	line-height: 92rpx;
+	height: 92rpx;
+	border-radius: 46rpx;
+	color: #FFFFFF;
+	width: 662rpx;
+	background: -webkit-linear-gradient(307deg, #3DACFF 0%, #796BFC 100%);
+	background: linear-gradient(143deg, #3DACFF 0%, #796BFC 100%);
+}
+.btn-bg:hover {
+	background: -webkit-linear-gradient(307deg, #4EBDFF 0%, #8A7CFD 100%);
+	background: linear-gradient(143deg, #4EBDFF 0%, #8A7CFD 100%);
+}
+

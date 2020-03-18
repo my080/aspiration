@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "submit-button": "/components/submit-button/submit-button",
     "m-input": "/components/m-input"
   }
 }

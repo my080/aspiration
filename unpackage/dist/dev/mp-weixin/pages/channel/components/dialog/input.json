@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-s-input": "/pages/channel/components/field/input"
+  }
+}
