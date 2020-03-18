@@ -143,8 +143,11 @@
       height: 100%;
 }
 .header .title.data-v-40a02ae8 {
+    font-family: OPPOSans-B;
+    color: #303133;
+    text-align: center;
     height: 88rpx;
-    font-size: 32rpx;
+    font-size: 36rpx;
     padding-left: 30rpx;
     padding-right: 30rpx;
     font-weight: 700;

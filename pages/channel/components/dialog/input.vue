@@ -10,6 +10,7 @@
 			</view>
 			
 			<button class="create-btn" @click.native="addChannel">立即生成</button>
+			
 		</view>
 	</view>
 </template>
@@ -49,7 +50,7 @@
 			},
 
 			addChannel() {
-				
+				this.$emit('to-new-channel')
 			},
 
 			// 关闭弹窗

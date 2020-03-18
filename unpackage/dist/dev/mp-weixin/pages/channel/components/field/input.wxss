@@ -69,7 +69,7 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.field-input-placeholder .data-v-7223bbed {
+.field-input-placeholder.data-v-7223bbed {
   font-size: 32rpx;
   opacity: 0.3;
   font-family: OPPOSans-R;

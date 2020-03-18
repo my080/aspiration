@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "submit-button": "/components/submit-button/submit-button",
-    "nav-bar": "/components/zhouWei-navBar/index"
+    "nav-bar": "/components/zhouWei-navBar/index",
+    "input-dialog": "/pages/channel/components/dialog/input"
   }
 }

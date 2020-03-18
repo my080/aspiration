@@ -49,7 +49,6 @@
 		},
 		methods: {
 			userLogin() {
-				console.log('dfdfdffd')
 				uni.navigateTo({
 					url: '../index/index'
 				})

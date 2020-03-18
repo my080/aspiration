@@ -402,8 +402,11 @@ export default {
 		}
 	}
 	.title {
+		font-family: OPPOSans-B;
+		color: #303133;
+		text-align: center;
 		height: 88upx;
-		font-size: 32upx;
+		font-size: 36upx;
 		padding-left: 30upx;
 		padding-right: 30upx;
 		font-weight: 700;
