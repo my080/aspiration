@@ -1,1 +1,1 @@
-<view class="content"><nav-bar vue-id="68684de3-1" title="{{barTitle}}" bind:__l="__l" vue-slots="{{['left']}}"><view class="address_select" slot="left"></view></nav-bar><view class="main"></view></view>
+<view class="content data-v-788b3a2f"><nav-bar vue-id="68684de3-1" title="{{barTitle}}" class="data-v-788b3a2f" bind:__l="__l" vue-slots="{{['left']}}"><view class="address_select data-v-788b3a2f" slot="left"></view></nav-bar><view class="main data-v-788b3a2f"></view></view>

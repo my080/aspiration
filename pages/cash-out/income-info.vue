@@ -12,20 +12,22 @@
 					{{ price }}
 				</view>
 			</view>
+			
 			<view class="message-list">
 				<view class="message-item">
 					<view class="labal">
 						成交时间
 					</view>
-					<view class="content">
+					<view class="message-content">
 						2020-06-01  08:08
 					</view>
 				</view>
+				
 				<view class="message-item">
 					<view class="labal">
 						订单号码
 					</view>
-					<view class="content">
+					<view class="message-content">
 						1000049901202202170123378494558
 					</view>
 				</view>
@@ -59,7 +61,7 @@
 	}
 </script>
 
-<style platform="mp-weixin">
+<style platform="mp-weixin" scoped>
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -122,7 +124,7 @@
 		line-height: 42upx;
 	}
 	
-	.message-list .message-item .content {
+	.message-list .message-item .message-content {
 		font-family: OPPOSans-M;
 		font-size: 28upx;
 		color: #303133;

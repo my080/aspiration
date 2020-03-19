@@ -54,7 +54,7 @@
 	}
 </script>
 
-<style platform="mp-weixin">
+<style platform="mp-weixin" scoped>
 	.content {
 		display: flex;
 		flex-direction: column;

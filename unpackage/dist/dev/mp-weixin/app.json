@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/index/index",
     "pages/channel/empty-channel",
-    "pages/login/login",
     "pages/channel/my-channel",
     "pages/channel/new-channel",
     "pages/cash-out/business-setting",

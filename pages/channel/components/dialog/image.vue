@@ -5,11 +5,27 @@
 			
 			<view class="close" @click.native="closeDialog"></view>
 			
-			<view class="input-field">
-				<uni-s-input placeholder="请输入渠道名称..."></uni-s-input>
+			<!-- <view class="input-field"> -->
+				<!-- <uni-s-input placeholder="请输入渠道名称..."></uni-s-input> -->
+			<!-- </view> -->
+			
+			<view class="img-container">
+				<!-- #ifdef MP-WEIXIN -->
+					<view class="img-area">
+						<image class="er-image" src="../../../../static/img/256.png" mode=""></image>
+					</view>
+				<!-- #endif -->
+				
+				<!-- #ifdef H5 -->
+					<view class="img-area">
+						<img class="er-image" src="../../../../static/img/256.png" alt="">
+					</view>
+				<!-- #endif -->
 			</view>
 			
-			<button class="create-btn" @click.native="addChannel">立即生成</button>
+			
+			
+			<button class="create-btn" @click.native="addChannel">保存图片</button>
 		</view>
 	</view>
 </template>
@@ -73,8 +89,6 @@
 		left: 0;
 		z-index: 1500;
 		transition: visibility 200ms ease-in;
-		opacity: 0.8;
-		background: #000000;
 		
 		.create-btn {
 			margin-top: 86upx;
@@ -91,11 +105,29 @@
 		
 		.xy-dialog__container {
 			width: 658upx;
-			height: 418upx;
+			height: 950upx;
 			background-image: linear-gradient(143deg, #3DACFF 0%, #796BFC 100%);
 			border-radius: 11px;
-			border-radius: 11px;
 			padding: 30upx;
+		}
+		
+		.img-container {
+			display: flex;
+			justify-content: center;
+		}
+		
+		.img-area {
+			width: 412upx;
+			height: 502upx;
+			background: #FFFFFF;
+			border-radius: 12upx;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.img-area .er-image {
+			margin-left: auto;
+			margin-right: auto;
 		}
 		
 		.input-field {
@@ -137,9 +169,8 @@
 			bottom: 0;
 			width: 100%;
 			height: 100%;
-			background: rgba(0, 0, 0, .2);
-			opacity: 0;
 			transition: opacity 200ms ease-in;
+			background: rgba($color: #000000, $alpha: 0.8);
 		}
 
 		&__show {
