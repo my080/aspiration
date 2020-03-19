@@ -6,11 +6,15 @@
 		<view class="content">
 			<view class="input-group">
 				<view class="input-row border">
-					<text class="title">手机号：</text>
+					<view class="labal">
+						<text class="title">手机号：</text>
+					</view>
 					<m-input class="m-input" type="text" clearable focus v-model="account" placeholder="请输入手机号"></m-input>
 				</view>
 				<view class="input-row">
-					<text class="title">验证码：</text>
+					<view class="labal">
+						<text class="title">验证码：</text>
+					</view>
 					<m-input type="password" displayable v-model="password" placeholder="请输入验证码"></m-input>
 				</view>
 			</view>
@@ -165,7 +169,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.logo {
 		margin-top: 124upx;
 		background-image: url(../../static/img/pic1.png);
@@ -174,6 +178,10 @@
 		background-repeat: no-repeat;
 		background-position: center;
 	}
+	.container {
+		background: #FFFFFF;
+		height: 100vh;
+	}
 
 	.content {
 		display: flex;
@@ -181,6 +189,19 @@
 		flex-direction: column;
 		padding: 20upx;
 	}
+	
+	.input-row {
+		display: flex;
+	}
+	
+	.input-row .labal {
+		width: 200upx;
+		font-family: OPPOSans-R;
+		font-size: 26upx;
+		color: #909399;
+		line-height: 80upx;
+	}
+	
 
 	.action-row {
 		display: flex;

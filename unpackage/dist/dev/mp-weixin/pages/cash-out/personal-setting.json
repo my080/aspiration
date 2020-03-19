@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "nav-bar": "/components/zhouWei-navBar/index"
+    "submit-button": "/components/submit-button/submit-button",
+    "nav-bar": "/components/zhouWei-navBar/index",
+    "m-input": "/pages/cash-out/components/field/input"
   }
 }

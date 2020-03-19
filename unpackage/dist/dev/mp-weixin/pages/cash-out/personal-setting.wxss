@@ -8,6 +8,7 @@
 	-webkit-flex-direction: column;
 	        flex-direction: column;
 	height: 100vh;
+	background: #FFFFFF;
 }
 .address_select {
 	margin-left: 44rpx;
@@ -17,9 +18,25 @@
 	height: 32rpx;
 }
 .main {
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
 	-webkit-box-flex: 1;
 	-webkit-flex-grow: 1;
 	        flex-grow: 1;
+	padding: 80rpx 44rpx;
+}
+.input-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.input-item .labal {
+	width: 200rpx;
+	font-family: OPPOSans-R;
+	font-size: 26rpx;
+	color: #909399;
+	line-height: 80rpx;
 }
 .btn-bar {
 	padding-bottom: 64rpx;

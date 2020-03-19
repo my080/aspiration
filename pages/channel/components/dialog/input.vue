@@ -1,6 +1,6 @@
 <template>
 	<view class="xy-dialog" :class="{ 'xy-dialog__show': isShow }" @touchmove.stop.prevent="bindTouchmove">
-		<view class="xy-dialog__mask"></view>
+		
 		<view class="xy-dialog__container">
 			
 			<view class="close" @click.native="closeDialog"></view>
@@ -12,6 +12,8 @@
 			<button class="create-btn" @click.native="addChannel">立即生成</button>
 			
 		</view>
+		
+		<view class="xy-dialog__mask"></view>
 	</view>
 </template>
 
@@ -74,8 +76,6 @@
 		left: 0;
 		z-index: 1500;
 		transition: visibility 200ms ease-in;
-		opacity: 0.8;
-		background: #000000;
 		
 		.create-btn {
 			margin-top: 86upx;
@@ -123,11 +123,11 @@
 			transition: transform 0.3s;
 			background-color: #fff;
 			overflow: hidden;
-			opacity: 0;
+			opacity: 1;
 			transition: opacity 200ms ease-in;
 			padding-top: 30upx;
 		}
-
+		
 		&__mask {
 			display: block;
 			position: absolute;
@@ -138,9 +138,8 @@
 			bottom: 0;
 			width: 100%;
 			height: 100%;
-			background: rgba(0, 0, 0, .2);
-			opacity: 0;
 			transition: opacity 200ms ease-in;
+			background: rgba($color: #000000, $alpha: 0.8);
 		}
 
 		&__show {

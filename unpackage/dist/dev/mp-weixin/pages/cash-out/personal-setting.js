@@ -95,7 +95,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
-var components
+var components = {
+  "submit-button": () =>
+    __webpack_require__.e(/*! import() | components/submit-button/submit-button */ "components/submit-button/submit-button").then(__webpack_require__.bind(null, /*! @/components/submit-button/submit-button.vue */ 142))
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -133,7 +136,55 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var NavBar = function NavBar() {return __webpack_require__.e(/*! import() | components/zhouWei-navBar/index */ "components/zhouWei-navBar/index").then(__webpack_require__.bind(null, /*! @/components/zhouWei-navBar */ 135));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var NavBar = function NavBar() {return __webpack_require__.e(/*! import() | components/zhouWei-navBar/index */ "components/zhouWei-navBar/index").then(__webpack_require__.bind(null, /*! @/components/zhouWei-navBar */ 128));};var SubmitButton = function SubmitButton() {return __webpack_require__.e(/*! import() | components/submit-button/submit-button */ "components/submit-button/submit-button").then(__webpack_require__.bind(null, /*! @/components/submit-button/submit-button.vue */ 142));};var mInput = function mInput() {return __webpack_require__.e(/*! import() | pages/cash-out/components/field/input */ "pages/cash-out/components/field/input").then(__webpack_require__.bind(null, /*! ./components/field/input.vue */ 207));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -148,14 +199,27 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 {
   name: 'empty-channel',
   components: {
-    'nav-bar': NavBar },
+    'nav-bar': NavBar,
+    'submit-button': SubmitButton,
+    'm-input': mInput },
 
   data: function data() {
     return {
-      barTitle: "我的渠道" };
+      barTitle: "设置个人提现账户" };
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    toBack: function toBack() {
+      uni.navigateTo({
+        url: '../index/index' });
+
+    },
+    submit: function submit() {
+      uni.navigateTo({
+        url: '../index/index' });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

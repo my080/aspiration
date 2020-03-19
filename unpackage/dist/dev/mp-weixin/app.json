@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/channel/empty-channel",
     "pages/index/index",
+    "pages/channel/empty-channel",
     "pages/login/login",
     "pages/channel/my-channel",
     "pages/channel/new-channel",

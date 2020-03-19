@@ -36,8 +36,6 @@
   z-index: 1500;
   -webkit-transition: visibility 200ms ease-in;
   transition: visibility 200ms ease-in;
-  opacity: 0.8;
-  background: #000000;
 }
 .xy-dialog .create-btn.data-v-5d9557fb {
     margin-top: 86rpx;
@@ -85,7 +83,7 @@
     transition: transform 0.3s, -webkit-transform 0.3s;
     background-color: #fff;
     overflow: hidden;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: opacity 200ms ease-in;
     transition: opacity 200ms ease-in;
     padding-top: 30rpx;
@@ -100,10 +98,9 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    opacity: 0;
     -webkit-transition: opacity 200ms ease-in;
     transition: opacity 200ms ease-in;
+    background: rgba(0, 0, 0, 0.8);
 }
 .xy-dialog__show .xy-dialog__container.data-v-5d9557fb,
   .xy-dialog__show .xy-dialog__mask.data-v-5d9557fb {

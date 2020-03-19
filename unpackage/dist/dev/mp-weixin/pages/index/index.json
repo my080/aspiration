@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "nav-bar": "/components/zhouWei-navBar/index"
+    "nav-bar": "/components/zhouWei-navBar/index",
+    "capacity-dialog": "/pages/index/components/dialog/capacity"
   }
 }

@@ -14,6 +14,6 @@ VantComponent({
 });
 export default global['__wxComponents']['vant/goods-action/index']
 </script>
-<style platform="mp-weixin">
+<style platform="mp-weixin" lang="scss">
 @import '../common/index.css';.van-goods-action{position:fixed;right:0;bottom:0;left:0;display:-webkit-flex;display:flex;background-color:#fff}.van-goods-action--safe{padding-bottom:34px}
 </style>
