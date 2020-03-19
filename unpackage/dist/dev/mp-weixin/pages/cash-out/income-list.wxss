@@ -21,6 +21,14 @@
 	-webkit-flex-grow: 1;
 	        flex-grow: 1;
 }
+.date-bar {
+	margin-top: 48rpx;
+	padding: 26rpx 30rpx;
+	background: #F3F7FA;
+	font-family: OPPOSans-R;
+	font-size: 26rpx;
+	color: #303133;
+}
 .btn-bar {
 	padding-bottom: 64rpx;
 }

@@ -16,10 +16,71 @@
 	width: 20rpx;
 	height: 32rpx;
 }
+.message-bar {
+	margin-top: 48rpx;
+	padding: 26rpx 36rpx;
+	background: #F3F7FA;
+	color: #303133;
+	text-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.message-bar .title {
+	font-family: OPPOSans-R;
+	font-size: 28rpx;
+	color: #303133;
+}
+.message-bar .price {
+	font-family: OPPOSans-H;
+	font-size: 28rpx;
+	color: #303133;
+	font-weight: 700;
+	margin-top: 20rpx;
+}
 .main {
 	-webkit-box-flex: 1;
 	-webkit-flex-grow: 1;
 	        flex-grow: 1;
+}
+.message-list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	padding: 44rpx;
+}
+.message-list .message-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	height: 80rpx;
+}
+.message-list .message-item .labal {
+	width: 160rpx;
+	min-width: 160rpx;
+	font-family: OPPOSans-R;
+	font-size: 26rpx;
+	color: #909399;
+	line-height: 42rpx;
+}
+.message-list .message-item .content {
+	font-family: OPPOSans-M;
+	font-size: 28rpx;
+	color: #303133;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+	letter-spacing: 1.2px;
+	line-height: 42rpx;
+	word-break: break-all;
 }
 .btn-bar {
 	padding-bottom: 64rpx;

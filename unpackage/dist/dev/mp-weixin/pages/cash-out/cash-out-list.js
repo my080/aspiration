@@ -95,7 +95,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
-var components
+var components = {
+  "uni-list": () =>
+    __webpack_require__.e(/*! import() | components/uni-list/uni-list */ "components/uni-list/uni-list").then(__webpack_require__.bind(null, /*! @/components/uni-list/uni-list.vue */ 170)),
+  "uni-list-item": () =>
+    __webpack_require__.e(/*! import() | components/uni-list-item/uni-list-item */ "components/uni-list-item/uni-list-item").then(__webpack_require__.bind(null, /*! @/components/uni-list-item/uni-list-item.vue */ 177))
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -133,7 +138,23 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var NavBar = function NavBar() {return __webpack_require__.e(/*! import() | components/zhouWei-navBar/index */ "components/zhouWei-navBar/index").then(__webpack_require__.bind(null, /*! @/components/zhouWei-navBar */ 128));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var NavBar = function NavBar() {return __webpack_require__.e(/*! import() | components/zhouWei-navBar/index */ "components/zhouWei-navBar/index").then(__webpack_require__.bind(null, /*! @/components/zhouWei-navBar */ 128));};var UniList = function UniList() {return __webpack_require__.e(/*! import() | components/uni-list/uni-list */ "components/uni-list/uni-list").then(__webpack_require__.bind(null, /*! @/components/uni-list/uni-list.vue */ 170));};var UniListItem = function UniListItem() {return __webpack_require__.e(/*! import() | components/uni-list-item/uni-list-item */ "components/uni-list-item/uni-list-item").then(__webpack_require__.bind(null, /*! @/components/uni-list-item/uni-list-item.vue */ 177));};var DyDate = function DyDate() {return __webpack_require__.e(/*! import() | components/dy-Date/dy-Date */ "components/dy-Date/dy-Date").then(__webpack_require__.bind(null, /*! @/components/dy-Date/dy-Date.vue */ 184));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -148,14 +169,28 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 {
   name: 'empty-channel',
   components: {
-    'nav-bar': NavBar },
+    'nav-bar': NavBar,
+    'uni-list': UniList,
+    'uni-list-item': UniListItem,
+    'dy-date': DyDate },
 
   data: function data() {
     return {
-      barTitle: "我的渠道" };
+      barTitle: "提现记录" };
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    toBack: function toBack() {
+      uni.navigateTo({
+        url: '../index/index' });
+
+    },
+    toCashOutInfo: function toCashOutInfo() {
+      uni.navigateTo({
+        url: './cash-out-info' });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

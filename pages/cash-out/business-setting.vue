@@ -31,6 +31,9 @@
 				<view class="labal">
 					营业执照：
 				</view>
+<!-- 				<view class="">
+					
+				</view> -->
 			</view>
 			
 		</view>
@@ -66,7 +69,7 @@
 			},
 			submit() {
 				uni.navigateTo({
-					url: '../index/index'
+					url: './cash-out-desc'
 				})
 			}
 		}

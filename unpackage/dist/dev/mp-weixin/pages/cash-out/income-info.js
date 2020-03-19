@@ -133,7 +133,34 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var NavBar = function NavBar() {return __webpack_require__.e(/*! import() | components/zhouWei-navBar/index */ "components/zhouWei-navBar/index").then(__webpack_require__.bind(null, /*! @/components/zhouWei-navBar */ 128));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var NavBar = function NavBar() {return __webpack_require__.e(/*! import() | components/zhouWei-navBar/index */ "components/zhouWei-navBar/index").then(__webpack_require__.bind(null, /*! @/components/zhouWei-navBar */ 128));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -152,10 +179,18 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
   data: function data() {
     return {
-      barTitle: "我的渠道" };
+      barTitle: "账单详情",
+      title: '能上的大学',
+      price: '+29.90' };
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    toBack: function toBack() {
+      uni.navigateTo({
+        url: './cash-out-list' });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

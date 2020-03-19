@@ -16,6 +16,26 @@
 	width: 20rpx;
 	height: 32rpx;
 }
+.message-bar {
+	margin-top: 48rpx;
+	padding: 26rpx 30rpx;
+	background: #F3F7FA;
+	font-family: OPPOSans-R;
+	font-size: 26rpx;
+	color: #303133;
+	text-align: center;
+}
+.message-bar .title {
+	ont-family: OPPOSans-R;
+	font-size: 28rpx;
+	color: #303133;
+}
+.message-bar .price {
+	font-family: OPPOSans-H;
+	font-size: 28rpx;
+	color: #303133;
+	font-weight: 700;
+}
 .main {
 	-webkit-box-flex: 1;
 	-webkit-flex-grow: 1;

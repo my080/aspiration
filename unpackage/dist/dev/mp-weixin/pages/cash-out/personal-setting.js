@@ -136,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var NavBar = function NavBar() {return __webpack_require__.e(/*! import() | components/zhouWei-navBar/index */ "components/zhouWei-navBar/index").then(__webpack_require__.bind(null, /*! @/components/zhouWei-navBar */ 128));};var SubmitButton = function SubmitButton() {return __webpack_require__.e(/*! import() | components/submit-button/submit-button */ "components/submit-button/submit-button").then(__webpack_require__.bind(null, /*! @/components/submit-button/submit-button.vue */ 142));};var mInput = function mInput() {return __webpack_require__.e(/*! import() | pages/cash-out/components/field/input */ "pages/cash-out/components/field/input").then(__webpack_require__.bind(null, /*! ./components/field/input.vue */ 207));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var NavBar = function NavBar() {return __webpack_require__.e(/*! import() | components/zhouWei-navBar/index */ "components/zhouWei-navBar/index").then(__webpack_require__.bind(null, /*! @/components/zhouWei-navBar */ 128));};var SubmitButton = function SubmitButton() {return __webpack_require__.e(/*! import() | components/submit-button/submit-button */ "components/submit-button/submit-button").then(__webpack_require__.bind(null, /*! @/components/submit-button/submit-button.vue */ 142));};var mInput = function mInput() {return __webpack_require__.e(/*! import() | pages/cash-out/components/field/input */ "pages/cash-out/components/field/input").then(__webpack_require__.bind(null, /*! ./components/field/input.vue */ 163));};var _default =
 
 
 
@@ -216,7 +216,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     submit: function submit() {
       uni.navigateTo({
-        url: '../index/index' });
+        url: './cash-out-desc' });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

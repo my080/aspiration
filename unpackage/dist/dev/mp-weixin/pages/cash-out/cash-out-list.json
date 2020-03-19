@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "nav-bar": "/components/zhouWei-navBar/index"
+    "uni-list": "/components/uni-list/uni-list",
+    "uni-list-item": "/components/uni-list-item/uni-list-item",
+    "nav-bar": "/components/zhouWei-navBar/index",
+    "dy-date": "/components/dy-Date/dy-Date"
   }
 }

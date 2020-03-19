@@ -1,9 +1,22 @@
 <template>
 	<view class="content">
 		<nav-bar :title="barTitle">
-			<view slot="left" class="address_select"></view>
+			<view slot="left" class="address_select" @click.native="toBack"></view>
 		</nav-bar>
-		<view class="main"></view>
+		<view class="main">
+			<view>
+				
+			</view>
+			<view>
+				
+			</view>
+			<view>
+				
+			</view>
+			<view>
+				
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -17,10 +30,17 @@
 		},
 		data() {
 			return {
-				barTitle: "我的渠道"
+				barTitle: "提现详情",
+				title: '能上的大学'
 			}
 		},
-		methods: {}
+		methods: {
+			toBack() {
+				uni.navigateTo({
+					url: './cash-out-list'
+				})
+			}
+		}
 	}
 </script>
 
@@ -37,6 +57,29 @@
 		background-size: 20upx;
 		width: 20upx;
 		height: 32upx;
+	}
+	
+	.message-bar {
+		margin-top: 48upx;
+		padding: 26upx 30upx;
+		background: #F3F7FA;
+		font-family: OPPOSans-R;
+		font-size: 26upx;
+		color: #303133;
+		text-align: center;
+	}
+	
+	.message-bar .title {
+		ont-family: OPPOSans-R;
+		font-size: 28upx;
+		color: #303133;
+	}
+	
+	.message-bar .price {
+		font-family: OPPOSans-H;
+		font-size: 28upx;
+		color: #303133;
+		font-weight: 700;
 	}
 
 	.main {

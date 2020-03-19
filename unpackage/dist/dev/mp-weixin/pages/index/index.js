@@ -244,12 +244,12 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     toIncome: function toIncome() {
       uni.navigateTo({
-        url: '../index/index' });
+        url: '../cash-out/income-list' });
 
     },
     toCash: function toCash() {
       uni.navigateTo({
-        url: '../cash-out/cash-out-desc' });
+        url: '../cash-out/cash-out-list' });
 
     },
     toCashOut: function toCashOut() {

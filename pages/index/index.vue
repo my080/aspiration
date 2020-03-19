@@ -100,12 +100,12 @@
 		methods: {
 			toIncome() {
 				uni.navigateTo({
-					url: '../index/index'
+					url: '../cash-out/income-list'
 				})
 			},
 			toCash() {
 				uni.navigateTo({
-					url: '../cash-out/cash-out-desc'
+					url: '../cash-out/cash-out-list'
 				})
 			},
 			toCashOut() {

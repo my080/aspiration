@@ -78,7 +78,7 @@
 			},
 			submit() {
 				uni.navigateTo({
-					url: '../index/index'
+					url: './cash-out-desc'
 				})
 			}
 		}
