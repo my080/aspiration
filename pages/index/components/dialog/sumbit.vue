@@ -5,29 +5,9 @@
 			
 			<view class="close" @click.native="closeDialog"></view>
 			
-			<view class="message">
-				<view class="message-item">
-					
-				</view>
-				<view class="message-item">
-					
-				</view>
-			</view>
-			
-			<view class="amount">
-				
-			</view>
-			
-			<view class="amount-desc">
-				
-			</view>
-			
-			<view class="amount-message">
-				
-			</view>
-			
-			<view class="btn-bar">
-				<button class="create-btn" @click.native="addChannel">立即生成</button>
+			<view class="btn-area">
+				<button class="create-btn" @click.native="toBusiness">我是企业</button>
+				<button class="create-btn" @click.native="toPersonel">我是个人</button>
 			</view>
 			
 		</view>
@@ -130,7 +110,7 @@
 		}
 		
 		.xy-dialog__container {
-			width: 718upx;
+			width: 658upx;
 			height: 424upx;
 			background-image: linear-gradient(143deg, #3DACFF 0%, #796BFC 100%);
 			border-radius: 11px;

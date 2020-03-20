@@ -4,39 +4,52 @@
 			<view slot="left" class="address_select" @click.native="toBack"></view>
 		</nav-bar>
 		<view class="main">
-			<view class="carpet">
-				<view class="title">
-					1、提现门槛
-				</view>
-				<view class="desc-message">
-					<view>
-						a. 提现金额需大于等于50元，上不封顶
-					</view>
-					<view>
-						b. 每个月最多可申请4次提现
-					</view>
+			<view class="message-bar">
+				<!-- <view class="title">
+					{{ title }}
+				</view> -->
+				<view class="price">
+					{{ price }}
 				</view>
 			</view>
 			
-			<view>
-				<view class="title">
-					2、提现须知
+			<view class="message-list">
+				<view class="message-item">
+					<view class="labal">
+						成交时间
+					</view>
+					<view class="message-content">
+						2020-06-01  08:08
+					</view>
 				</view>
-				<view class="desc-message">
-					<view class="item">
-						a. 商品确认收货后，有7天的退换货周期。待周期结束，佣金进入可提现账户，方可申请提现。未结算的佣金不能提现
+				
+				<view class="message-item">
+					<view class="labal">
+						申请状态
 					</view>
-					<view class="item">
-						b. 满足提现门槛的佣金即可发起提现，提现后等待财务人员受理,工作日24小时内到账，遇节假日顺延
+					<view class="message-content">
+						提现中
 					</view>
-					<view class="item">
-						c. 已有待处理申请未被受理时，无法发起下一笔提现需求，请耐心等待
+				</view>
+				
+				<view class="message-item">
+					<view class="labal">
+						预计到账
+					</view>
+					<view class="message-content">
+						3-8个工作日
+					</view>
+				</view>
+				
+				<view class="message-item">
+					<view class="labal">
+						订单号码
+					</view>
+					<view class="message-content">
+						1000049901202202170123378494558
 					</view>
 				</view>
 			</view>
-		</view>
-		<view class="btn-bar">
-			<submit-button msg="我知道了" @click.native="toCashOut"></submit-button>
 		</view>
 	</view>
 </template>
@@ -51,19 +64,13 @@
 		},
 		data() {
 			return {
-				barTitle: "提现说明"
+				barTitle: "账单详情",
+				title: '能上的大学',
+				price: '￥5000,000'
 			}
 		},
 		methods: {
 			toBack() {
-				// uni.navigateTo({
-				// 	url: './my-channel'
-				// })
-				uni.navigateTo({
-					url: '../index/index'
-				})
-			},
-			toCashOut() {
 				uni.navigateTo({
 					url: '../index/index'
 				})
@@ -87,33 +94,62 @@
 		height: 32upx;
 	}
 	
-	.carpet {
-		margin-bottom: 32upx;
-	}
-	
-	.title {
-		font-family: OPPOSans-B;
-		font-size: 36upx;
+	.message-bar {
+		margin-top: 48upx;
+		padding: 26upx 36upx;
+		background: #F3F7FA;
 		color: #303133;
-		font-weight: 800;
-		margin-bottom: 36upx;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
 	}
 	
-	.desc-message {
+	.message-bar .title {
 		font-family: OPPOSans-R;
 		font-size: 28upx;
-		color: #00002A;
-		line-height: 50upx;
-		font-weight: 300;
+		color: #303133;
 	}
 	
-	.desc-message .item {
-		margin-bottom: 32upx;
+	.message-bar .price {
+		font-family: OPPOSans-H;
+		font-size: 28upx;
+		color: #303133;
+		font-weight: 700;
+		margin-top: 20upx;
 	}
 
 	.main {
 		flex-grow: 1;
-		padding: 80upx 44upx;
+	}
+	
+	.message-list {
+		display: flex;
+		flex-direction: column;
+		padding: 44upx;
+	}
+	
+	.message-list .message-item {
+		display: flex;
+		height: 80upx;
+	}
+	
+	.message-list .message-item .labal {
+		width: 160upx;
+		min-width: 160upx;
+		font-family: OPPOSans-R;
+		font-size: 26upx;
+		color: #909399;
+		line-height: 42upx;
+	}
+	
+	.message-list .message-item .message-content {
+		font-family: OPPOSans-M;
+		font-size: 28upx;
+		color: #303133;
+		flex-grow: 1;
+		letter-spacing: 1.2px;
+		line-height: 42upx;
+		word-break: break-all;
 	}
 
 	.btn-bar {
