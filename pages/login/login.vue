@@ -5,40 +5,46 @@
 		</view>
 		<view class="content">
 			<view class="input-group">
-				<view class="input-row border">
+				
+				<view class="input-row">
 					<view class="labal">
 						<text class="title">手机号：</text>
 					</view>
 					<m-input class="m-input" type="text" clearable focus v-model="account" placeholder="请输入手机号"></m-input>
 				</view>
-				<view class="input-row">
+				
+				<view class="input-row" style="margin-top: 18upx;">
 					<view class="labal">
 						<text class="title">验证码：</text>
 					</view>
-					<m-input type="password" displayable v-model="password" placeholder="请输入验证码"></m-input>
+					<m-input type="password" placeholder="请输入验证码"></m-input>
 				</view>
+				
 			</view>
-
-			<!-- <van-checkbox></van-checkbox> -->
+			
 			<view class="btn-row">
 				<submit-button :msg="btnMsg" @click.native="userLogin"></submit-button>
 			</view>
+			
 			<view class="action-row">
-				<text>|</text>
-				<navigator url="../pwd/pwd">同意推测志愿分销协议</navigator>
+				<navigator class="agree">
+					<van-checkbox class="check-class" :value="true"></van-checkbox>
+					同意推测志愿分销协议
+				</navigator>
 			</view>
+			
 		</view>
 	</view>
 </template>
 
 <script>
 	import service from '../../service.js';
-	import mInput from '../../components/m-input.vue'
+	import mInput from './components/field/input.vue'
 	import SubmitButton from '@/components/submit-button/submit-button.vue'
 
 	export default {
 		components: {
-			mInput,
+			'm-input': mInput,
 			'submit-button': SubmitButton
 		},
 		data() {
@@ -178,9 +184,20 @@
 		background-repeat: no-repeat;
 		background-position: center;
 	}
+	
 	.container {
 		background: #FFFFFF;
-		height: 100vh;
+		/* height: 100vh; */
+	}
+	
+	.agree {
+		font-family: OPPOSans-R;
+		font-size: 26upx;
+		color: #909399;
+	}
+	
+	.check-class {
+		margin-right: 20upx;
 	}
 
 	.content {
@@ -196,22 +213,25 @@
 	
 	.input-row .labal {
 		width: 200upx;
-		font-family: OPPOSans-R;
-		font-size: 26upx;
-		color: #909399;
 		line-height: 80upx;
+		font-family: OPPOSans-M;
+		font-size: 32upx;
+		color: #303133;
 	}
-	
 
 	.action-row {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-	}
-
-	.action-row navigator {
 		color: #007aff;
-		padding: 0 20upx;
+		padding: 40upx 20upx;
+	}
+	
+	.input-group {
+		padding-top: 100upx;
+		width: 662upx;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.oauth-row {
@@ -222,6 +242,10 @@
 		top: 0;
 		left: 0;
 		width: 100%;
+	}
+	
+	.check-class {
+		display: inline-block;
 	}
 
 	.oauth-image {
@@ -238,8 +262,13 @@
 		height: 60upx;
 		margin: 20upx;
 	}
+	
+	.btn-row {
+		margin-top: 60upx;
+	}
 
 	button.primary {
 		background-color: #0faeff;
 	}
+	
 </style>

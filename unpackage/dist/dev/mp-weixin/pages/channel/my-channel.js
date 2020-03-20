@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   "submit-button": () =>
-    __webpack_require__.e(/*! import() | components/submit-button/submit-button */ "components/submit-button/submit-button").then(__webpack_require__.bind(null, /*! @/components/submit-button/submit-button.vue */ 142))
+    __webpack_require__.e(/*! import() | components/submit-button/submit-button */ "components/submit-button/submit-button").then(__webpack_require__.bind(null, /*! @/components/submit-button/submit-button.vue */ 128))
 }
 var render = function() {
   var _vm = this
@@ -136,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var NavBar = function NavBar() {return __webpack_require__.e(/*! import() | components/zhouWei-navBar/index */ "components/zhouWei-navBar/index").then(__webpack_require__.bind(null, /*! @/components/zhouWei-navBar */ 128));};var SubmitButton = function SubmitButton() {return __webpack_require__.e(/*! import() | components/submit-button/submit-button */ "components/submit-button/submit-button").then(__webpack_require__.bind(null, /*! @/components/submit-button/submit-button.vue */ 142));};var InputDialog = function InputDialog() {return __webpack_require__.e(/*! import() | pages/channel/components/dialog/input */ "pages/channel/components/dialog/input").then(__webpack_require__.bind(null, /*! ./components/dialog/input.vue */ 149));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var NavBar = function NavBar() {return __webpack_require__.e(/*! import() | components/zhouWei-navBar/index */ "components/zhouWei-navBar/index").then(__webpack_require__.bind(null, /*! @/components/zhouWei-navBar */ 142));};var SubmitButton = function SubmitButton() {return __webpack_require__.e(/*! import() | components/submit-button/submit-button */ "components/submit-button/submit-button").then(__webpack_require__.bind(null, /*! @/components/submit-button/submit-button.vue */ 128));};var InputDialog = function InputDialog() {return __webpack_require__.e(/*! import() | pages/channel/components/dialog/input */ "pages/channel/components/dialog/input").then(__webpack_require__.bind(null, /*! ./components/dialog/input.vue */ 156));};var _default =
 
 
 

@@ -24,5 +24,6 @@
     "van-checkbox": "/wxcomponents/vant/checkbox/index",
     "van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
     "van-icon": "/wxcomponents/vant/icon/index"
-  }
+  },
+  "sitemapLocation": "sitemap34.json"
 }

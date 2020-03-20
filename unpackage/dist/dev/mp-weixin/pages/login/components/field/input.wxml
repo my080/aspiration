@@ -1,0 +1,1 @@
+<view class="container data-v-048f0907"><input class="s-input data-v-048f0907" type="{{type}}" id="{{id}}" placeholder-class="placeholder-class" placeholder="{{placeholder}}" data-event-opts="{{[['input',[['inputChange',['$event']]]]]}}" value="{{value}}" bindinput="__e"/></view>

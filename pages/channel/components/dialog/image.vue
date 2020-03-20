@@ -23,8 +23,6 @@
 				<!-- #endif -->
 			</view>
 			
-			
-			
 			<button class="create-btn" @click.native="addChannel">保存图片</button>
 		</view>
 	</view>

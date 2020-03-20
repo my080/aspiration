@@ -7703,7 +7703,44 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 217:
+/***/ 21:
+/*!***************************************************!*\
+  !*** D:/workspace/projects/aspiration/service.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 管理账号信息
+var USERS_KEY = 'USERS_KEY';
+var STATE_KEY = 'STATE_KEY';
+
+var getUsers = function getUsers() {
+  var ret = '';
+  ret = uni.getStorageSync(USERS_KEY);
+  if (!ret) {
+    ret = '[]';
+  }
+  return JSON.parse(ret);
+};
+
+var addUser = function addUser(userInfo) {
+  var users = getUsers();
+  users.push({
+    account: userInfo.account,
+    password: userInfo.password });
+
+  uni.setStorageSync(USERS_KEY, JSON.stringify(users));
+};var _default =
+
+{
+  getUsers: getUsers,
+  addUser: addUser };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 224:
 /*!**********************************************************************!*\
   !*** D:/workspace/projects/aspiration/components/uni-icons/icons.js ***!
   \**********************************************************************/
@@ -7873,43 +7910,6 @@ try {
 
 module.exports = g;
 
-
-/***/ }),
-
-/***/ 37:
-/*!***************************************************!*\
-  !*** D:/workspace/projects/aspiration/service.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 管理账号信息
-var USERS_KEY = 'USERS_KEY';
-var STATE_KEY = 'STATE_KEY';
-
-var getUsers = function getUsers() {
-  var ret = '';
-  ret = uni.getStorageSync(USERS_KEY);
-  if (!ret) {
-    ret = '[]';
-  }
-  return JSON.parse(ret);
-};
-
-var addUser = function addUser(userInfo) {
-  var users = getUsers();
-  users.push({
-    account: userInfo.account,
-    password: userInfo.password });
-
-  uni.setStorageSync(USERS_KEY, JSON.stringify(users));
-};var _default =
-
-{
-  getUsers: getUsers,
-  addUser: addUser };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
@@ -8831,7 +8831,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index", "capacity-dialog": "/pages/index/components/dialog/capacity" }, "usingAutoImportComponents": {} }, "pages/channel/empty-channel": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index", "submit-button": "/components/submit-button/submit-button", "input-dialog": "/pages/channel/components/dialog/input" }, "usingAutoImportComponents": { "submit-button": "/components/submit-button/submit-button" } }, "pages/login/login": { "usingComponents": { "m-input": "/components/m-input", "submit-button": "/components/submit-button/submit-button" }, "usingAutoImportComponents": { "submit-button": "/components/submit-button/submit-button" } }, "pages/channel/my-channel": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index", "submit-button": "/components/submit-button/submit-button", "input-dialog": "/pages/channel/components/dialog/input" }, "usingAutoImportComponents": { "submit-button": "/components/submit-button/submit-button" } }, "pages/channel/new-channel": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index", "submit-button": "/components/submit-button/submit-button", "input-dialog": "/pages/channel/components/dialog/input" }, "usingAutoImportComponents": { "submit-button": "/components/submit-button/submit-button" } }, "pages/cash-out/business-setting": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index", "submit-button": "/components/submit-button/submit-button", "m-input": "/pages/cash-out/components/field/input" }, "usingAutoImportComponents": { "submit-button": "/components/submit-button/submit-button" } }, "pages/cash-out/cash-out-desc": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index" }, "usingAutoImportComponents": { "submit-button": "/components/submit-button/submit-button" } }, "pages/cash-out/cash-out-info": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index" }, "usingAutoImportComponents": {} }, "pages/cash-out/cash-out-list": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index", "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "dy-date": "/components/dy-Date/dy-Date" }, "usingAutoImportComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item" } }, "pages/cash-out/create-cash-out": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index" }, "usingAutoImportComponents": {} }, "pages/cash-out/income-list": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index", "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "dy-date": "/components/dy-Date/dy-Date" }, "usingAutoImportComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item" } }, "pages/cash-out/income-info": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index" }, "usingAutoImportComponents": {} }, "pages/cash-out/my-cash-out": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index" }, "usingAutoImportComponents": {} }, "pages/cash-out/personal-setting": { "usingComponents": { "nav-bar": "/components/zhouWei-navBar/index", "submit-button": "/components/submit-button/submit-button", "m-input": "/pages/cash-out/components/field/input" }, "usingAutoImportComponents": { "submit-button": "/components/submit-button/submit-button" } } }, "globalStyle": { "navigationStyle": "custom", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/login/login": {}, "pages/index/index": {}, "pages/channel/empty-channel": {}, "pages/channel/my-channel": {}, "pages/channel/new-channel": {}, "pages/cash-out/business-setting": {}, "pages/cash-out/cash-out-desc": {}, "pages/cash-out/cash-out-info": {}, "pages/cash-out/cash-out-list": {}, "pages/cash-out/create-cash-out": {}, "pages/cash-out/income-list": {}, "pages/cash-out/income-info": {}, "pages/cash-out/my-cash-out": {}, "pages/cash-out/personal-setting": {} }, "globalStyle": { "navigationStyle": "custom", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 
